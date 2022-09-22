@@ -68,3 +68,4 @@ function choseLevel() {
             elMid.style.boxShadow = 'none'
     }
 }
+

@@ -16,26 +16,34 @@
       <button class="mid" onclick="onChoseLevel(8,12)">mid</button>
       <button class="difficult" onclick="onChoseLevel(12,30)">difficult</button>
     </div>
+    <div class="btn-container">
+      <div class="life-container">
+        <div class="life"></div>
+      </div>
 
-    <div class="life-container">
-      <div class="life"></div>
+      <div class="smiley-container">
+        <div class="smiley"></div>
+      </div>
+
+      <div class="light-container">
+        <div class="light"></div>
+      </div>
     </div>
-
-    <div class="smiley-container">
-      <div class="smiley"></div>
-    </div>
-
-    <table class="table-container" cellpadding="8" border="1">
-      <tbody class="board"></tbody>
-    </table>
-    <div class="win">Victory</div>
+    <span class="main-container">
+      <table class="table-container" cellpadding="8">
+        <tbody class="board"></tbody>
+      </table>
+    </span>
 
     <div class="timer-container">
       <div class="timer">00:00</div>
     </div>
 
-    <div class="restart-container">
-      <button class="restart" onclick="initGame()">Restart</button>
+    <div class="win-container">
+      <div class="win">Victory</div>
+      <div class="restart-container">
+        <button class="restart" onclick="initGame()">Restart</button>
+      </div>
     </div>
 
     <script src="js/util.js"></script>
