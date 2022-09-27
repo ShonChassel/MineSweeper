@@ -166,8 +166,6 @@ function cellClicked(elCell, i, j) {
         return
     }
     renderBoard(gBoard)
-    console.log('gBoard', gBoard)
-    console.log('gGame.shownCount', gGame.shownCount)
 }
 
 function createMines(num, board) {
@@ -212,6 +210,7 @@ function onAddFlag(i, j) {
 
 function isVictory() {
     if (gLevel.SIZE * gLevel.SIZE - gLevel.MINES === gGame.shownCount ||
+        gLevel.SIZE * gLevel.SIZE - gLevel.MINES === gGame.shownCount + gGame.markedCount ||
         gLevel.MINES === gGame.minesCount) {
         console.log('winer',)
         winAudio.play()
@@ -283,8 +282,6 @@ function expandShown(board, cellI, cellJ) {
     }
 
 }
-
-
 
 function onLight(img1, img2, img3) {
     if(!gGame.isOn)return;
